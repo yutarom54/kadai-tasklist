@@ -30,7 +30,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+  gem 'bcrypt', '~> 3.1.7'
+  
+ gem 'hirb'      # モデルの出力結果を表形式で表示するGem
+ gem 'hirb-unicode' # 日本語などマルチバイト文字の出力時の出力結果のずれ
+ gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+ gem 'pry-doc'    # methodを表示
+ gem 'pry-byebug' # デバッグを実施
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -57,3 +63,5 @@ gem 'kaminari'
 group :production do
   gem 'pg'
 end
+
+ 
